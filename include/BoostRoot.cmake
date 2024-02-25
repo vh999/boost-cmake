@@ -4,7 +4,7 @@
 
 if(CMAKE_SOURCE_DIR STREQUAL Boost_SOURCE_DIR AND WIN32 AND CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 
-    set(CMAKE_INSTALL_PREFIX "C:/Boost" CACHE PATH "Installation path prefix, prepended to installation directories" FORCE)
+    set(CMAKE_INSTALL_PREFIX "$ENV{INSTALLS}/Boost" CACHE PATH "Installation path prefix, prepended to installation directories" FORCE)
 
 endif()
 
